@@ -1,0 +1,14 @@
+{
+	"sample_01": {
+		"data1": "hogehoge",
+		"data2": "あいうえお"
+	},
+	"sample_02": {
+		"data1": "fugafuga",
+		"data2": "かきくけこ"
+	},
+	"sample_03": {
+		"data1": "foofoo",
+		"data2": "さしすせそ"
+	}
+}
