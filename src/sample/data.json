@@ -1,14 +1,22 @@
 {
-	"sample_01": {
-		"data1": "hogehoge",
-		"data2": "あいうえお"
-	},
-	"sample_02": {
-		"data1": "fugafuga",
-		"data2": "かきくけこ"
-	},
-	"sample_03": {
-		"data1": "foofoo",
-		"data2": "さしすせそ"
-	}
+	"data" : [
+		{
+			"fileName": "01a_page",
+			"codeNum": "01a",
+			"data1": "hogehoge",
+			"data2": "あいうえお"
+		},
+		{
+			"fileName": "02d_page",
+			"codeNum": "02d",
+			"data1": "fugafuga",
+			"data2": "かきくけこ"
+		},
+		{
+			"fileName": "03f_page",
+			"codeNum": "03f",
+			"data1": "foofoo",
+			"data2": "さしすせそ"
+		}
+	]
 }
