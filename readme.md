@@ -2,7 +2,10 @@
 htmlパターンにデータを挿入するためのプログラムです。
 
 # 使用方法
-ルートディレクトリ上でnpm install後、npm startで動作します。
+ルートディレクトリ上でyarn install後、yarn startで動作します。
+prettierのパスを通すため、ルートディレクトリ上で
+export PATH=$PATH:./node_modules/.bin
+を実行してください。
 nodebrew v12.14.1で動作確認済です。
 
 # ファイルの説明・使用法

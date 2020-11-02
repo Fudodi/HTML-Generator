@@ -9,12 +9,13 @@ const destPath = `./dest/${groupName}/`;
 
 (() => {
 	data.forEach((item: { fileName: string; }) => {
-		console.log(item);
 		ejs.renderFile(templatePath, item, (error: any, output: any) => {
 			if(error) {
 				console.log(error);
 			} else {
-				fs.writeFileSync(destPath + `${item.fileName}.html`, output);
+				// 不要なtabと空の改行を削除
+				const htmlData = output.replace(/\t/g,'').replace(/^\n/gm,'');
+				fs.writeFileSync(destPath + `${item.fileName}.html`, htmlData);
 			}
 		});
 	});

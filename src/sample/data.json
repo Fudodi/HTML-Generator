@@ -4,19 +4,26 @@
 			"fileName": "01a_page",
 			"codeNum": "01a",
 			"data1": "hogehoge",
-			"data2": "あいうえお"
+			"data2": "あいうえお",
+			"ifExistData": [
+				"りんご",
+				"バナナ",
+				"メロン"
+			]
 		},
 		{
 			"fileName": "02d_page",
 			"codeNum": "02d",
 			"data1": "fugafuga",
-			"data2": "かきくけこ"
+			"data2": "かきくけこ",
+			"ifExistData": ""
 		},
 		{
 			"fileName": "03f_page",
 			"codeNum": "03f",
 			"data1": "foofoo",
-			"data2": "さしすせそ"
+			"data2": "さしすせそ",
+			"ifExistData": ""
 		}
 	]
 }

@@ -1,4 +1,20 @@
 <!-- ↓<%= codeNum %>↓ -->
 	<div class="basic"><%= data1 %></div>
 	<div class="basic2"><%= data2 %></div>
+	<% if (ifExistData.length) { %>
+		<div>
+			<h1>果物</h1>
+		</div>
+		繰り返し回数：<%= ifExistData.length %>
+		<ul>
+		<% ifExistData.forEach((item, key) => { %>
+			<li><%= item %></li>
+		<% }); %>
+		</ul>
+	<%# コメント %>
+	<%# if文をうまく効かすためには、データのjson側に空の値を追加してlength = 0とする（値が存在しない場合、エラーとなります） %>
+	<%# 逆に言えば、foreach用の値があるときだけ表出したいものは、if文を書かずともejsがよしなに削ってくれる。 %>
+	<% } else { %>
+		<div>ほげ</div>
+	<% } %>
 <!-- ↑<%= codeNum %>↑ -->

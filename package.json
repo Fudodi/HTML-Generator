@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx ts-node ./src/generator.ts",
     "build": "tsc",
-    "start": "tsc && node ./dist/generator"
+    "run_prettier": "prettier ./dest/**/*.html --write",
+    "start": "tsc && node ./dist/generator && yarn run_prettier"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +18,8 @@
   },
   "devDependencies": {
     "@types/node": "^13.7.4",
-    "@types/xlsx": "0.0.36",
     "ejs": "^3.1.5",
+    "prettier": "^2.1.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.2"
   }

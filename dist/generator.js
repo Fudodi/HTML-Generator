@@ -7,13 +7,14 @@ var data = JSON.parse(fs.readFileSync("./src/" + groupName + "/data.json", 'utf8
 var destPath = "./dest/" + groupName + "/";
 (function () {
     data.forEach(function (item) {
-        console.log(item);
         ejs.renderFile(templatePath, item, function (error, output) {
             if (error) {
                 console.log(error);
             }
             else {
-                fs.writeFileSync(destPath + (item.fileName + ".html"), output);
+                // 不要なtabと空の改行を削除
+                var htmlData = output.replace(/\t/g, '').replace(/^\n/gm, '');
+                fs.writeFileSync(destPath + (item.fileName + ".html"), htmlData);
             }
         });
     });
